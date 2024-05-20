@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header::before {
+    content: "";
+    background: url('photos/main.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header .login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.header .location {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header .location select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.restaurants {
+    margin-top: 20px;
+}
+
+
+.restaurants h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.restaurant {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: calc(50% - 20px);
+    max-width: 400px;
+}
+
+.restaurant img {
+    width: 100%;
+    height: auto;
+}
+
+.restaurant-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.restaurant-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.restaurant-info p {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.restaurant-info .rating {
+    font-size: 1.2em;
+    color: #ff9900;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .restaurant-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .restaurant {
+        width: 80%;
+    }
+}

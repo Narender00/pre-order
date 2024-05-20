@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Pre-order</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="login">Login</div>
+            <div class="banner">
+                <h1>Zomato</h1>
+                <p>Pre-order your food</p>
+                <div class="location">
+                    <label for="location-select">Choose location:</label>
+                    <select id="location-select">
+                        <option value="gajuwaka">Gajuwaka</option>
+                        <option value="other">Other Location</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <section class="restaurants">
+            <h2>Restaurants Nearby</h2>
+            <div class="restaurant-list">
+               <div   class="restaurant" data-url="page2.html"  >
+                    <img src="photos/mcdon.avif" alt="Restaurant Image">
+                    <div class="restaurant-info">
+                        <h3>Restaurant Name</h3>
+                        <p>Indian • Indian</p>
+                        <p class="rating">4.1</p>
+                    </div> 
+                </div>
+                <div class="restaurant" data-url="page2.html">
+                    <img src="photos/donne.avif" alt="Restaurant Image">
+                    <div class="restaurant-info">
+                        <h3>Restaurant Name</h3>
+                        <p>Indian • Indian</p>
+                        <p class="rating">4.1</p>
+                    </div>
+                </div>  
+                <div   class="restaurant" data-url="page2.html">
+                    <img src="photos/masq.avif" alt="Restaurant Image">
+                    <div class="restaurant-info">
+                        <h3>Restaurant Name</h3>
+                        <p>Indian • Indian</p>
+                        <p class="rating">4.1</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
