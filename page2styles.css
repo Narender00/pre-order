@@ -18,6 +18,20 @@ header {
     margin-bottom: 10px;
     position: relative;
 }
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+header {
+    padding: 65px 0px 30px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
 
 .back-button {
     position: absolute;
@@ -118,7 +132,201 @@ h2 {
     background-color: #ff4d4d;
     color: #fff;
     border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.add-button:hover {
+    background-color: #ff3333;
+}
+
+.customisable {
+    font-size: 12px;
+    color: #777;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ff4d4d;
+    border-radius: 20px;
     padding: 5px 10px;
+    background-color: #ffe6e6;
+}
+
+.quantity-control span {
+    cursor: pointer;
+    color: #ff4d4d;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.quantity-control span:hover {
+    color: #ff3333;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#pay-button {
+    display: block;
+    width: 100%;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#pay-button:hover {
+    background-color: #ff3333;
+}
+
+.cart-popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    display: none;
+    z-index: 1000;
+}
+
+.cart-popup .arrow {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+@media (max-width: 300px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-action {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    opacity: 90%;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cuisine {
+    color: #777;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.rating-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.rating {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.rating span {
+    font-weight: bold;
+}
+
+.location {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.price {
+    color: #777;
+    margin-top: 5px;
+}
+
+.item-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.item-action img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.add-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 7px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;

@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <header>
-          <a href="index.html"><img src="/photos/back.png" alt="Back" class="back-button"></a>
+            <a href="index.html"><img src="/photos/back.png" alt="Back" class="back-button"></a>
             <h1>Barbeque Nation</h1>
             <p class="cuisine">Biryani • North Indian • Chinese</p>
             <div class="rating-location">
@@ -21,7 +21,7 @@
         </header>
         <main>
             <h2>MENU</h2>
-            <div class="menu-item">
+            <div class="menu-item" data-name="Chicken Fried Biryani" data-price="319">
                 <div class="item-info">
                     <h3>Chicken Fried Biryani</h3>
                     <p class="price">₹320</p>
@@ -32,9 +32,9 @@
                     <p class="customisable">customisable</p>
                 </div>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-name="Fried" data-price="321">
                 <div class="item-info">
-                    <h3>Chicken Fried Biryani</h3>
+                    <h3>Fried</h3>
                     <p class="price">₹320</p>
                 </div>
                 <div class="item-action">
@@ -43,9 +43,9 @@
                     <p class="customisable">customisable</p>
                 </div>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" data-name="Biryani" data-price="322">
                 <div class="item-info">
-                    <h3>Chicken Fried Biryani</h3>
+                    <h3>Biryani</h3>
                     <p class="price">₹320</p>
                 </div>
                 <div class="item-action">
@@ -54,29 +54,12 @@
                     <p class="customisable">customisable</p>
                 </div>
             </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Chicken Fried Biryani</h3>
-                    <p class="price">₹320</p>
-                </div>
-                <div class="item-action">
-                    <img src="/photos/biryani.jpg" alt="Chicken Fried Biryani">
-                    <button class="add-button">ADD</button>
-                    <p class="customisable">customisable</p>
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="item-info">
-                    <h3>Chicken Fried Biryani</h3>
-                    <p class="price">₹320</p>
-                </div>
-                <div class="item-action">
-                    <img src="/photos/biryani.jpg" alt="Chicken Fried Biryani">
-                    <button class="add-button">ADD</button>
-                    <p class="customisable">customisable</p>
-                </div>
-            </div>
+            <!-- Repeat other menu items as needed -->
         </main>
     </div>
+    <div class="cart-popup" onclick="goToCartPage()">
+        <span id="item-count">0</span> items added <span class="arrow">➔</span>
+    </div>
+    <script src="script2.js"></script>
 </body>
 </html>
